@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Exercise</title>
+</head>
+<body>
+<h1>Register</h1>
+<label>First Name: <input name="username" type="text" value="John" required> </label>
+<label>Last Name: <input name="username" type="text" value="Smith" required> </label>
+<br>
+<label for="male">Male:</label>
+<input id="male" name="Gender" type="radio"> 
+<label for="female">Female:</label>
+<input id="female" name="Gender" type="radio">
+<label for="other">Other:</label>
+<input id="other" name="Gender" type="radio">
+<br>
+<label for="email">Email:</label>
+<input id="email" name="email" type="email" required>
+<label for="password">Password:</label>
+<input id="password" name="password" type="password" required pattern=".{5,10}">
+<br>
+<label for="birthday">Birthday:</label>
+<select id="birthday">
+    <option value=" ">--Month--</option>
+    <option value="January">January</option>
+    <option value="Febuary">Febuary</option>
+    <option value="March">March</option>
+</select>
+<select id="birthday">
+    <option value=" ">--Day--</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+</select>
+<select id="birthday">
+    <option value=" ">--Year--</option>
+    <option value="2000">2000</option>
+    <option value="2001">2001</option>
+    <option value="2002">2002</option>
+    <option value="2003">2003</option>
+</select>
+<br>
+<label for="termsAndConditions">I agree to the terms and conditions</label>
+<input id="termsAndConditions" type="checkbox" name="termsAndConditions" value="accepted">
+<br>
+<input type="submit">
+</form>
+</body>
+</html>
